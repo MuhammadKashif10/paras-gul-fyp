@@ -1,0 +1,104 @@
+[
+  {
+    "id": "mehndi-floral-braid",
+    "name": "Floral Braided Mehndi Updo",
+    "description": "A playful braided updo with floral accents that works especially well for colorful Mehndi events.",
+    "events": {
+      "Mehndi": 1,
+      "Baraat": 0.55,
+      "Walima": 0.4
+    },
+    "hairLengths": {
+      "Short": 0.35,
+      "Medium": 0.85,
+      "Long": 1
+    },
+    "tags": ["Braided", "Floral", "Festive"],
+    "image": "https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=600&h=800&fit=crop"
+  },
+  {
+    "id": "baraat-classic-bun",
+    "name": "Classic Baraat Low Bun",
+    "description": "A polished bridal bun designed for dupatta support and a traditional Baraat silhouette.",
+    "events": {
+      "Mehndi": 0.45,
+      "Baraat": 1,
+      "Walima": 0.75
+    },
+    "hairLengths": {
+      "Short": 0.45,
+      "Medium": 0.85,
+      "Long": 1
+    },
+    "tags": ["Traditional", "Elegant", "Veil-Friendly"],
+    "image": "https://images.unsplash.com/photo-1492106087820-71f1a00d2b11?w=600&h=800&fit=crop"
+  },
+  {
+    "id": "walima-hollywood-waves",
+    "name": "Walima Hollywood Waves",
+    "description": "Soft glam waves that create a refined look for reception styling and formal portraits.",
+    "events": {
+      "Mehndi": 0.4,
+      "Baraat": 0.7,
+      "Walima": 1
+    },
+    "hairLengths": {
+      "Short": 0.25,
+      "Medium": 0.8,
+      "Long": 1
+    },
+    "tags": ["Soft Glam", "Reception", "Waves"],
+    "image": "https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?w=600&h=800&fit=crop"
+  },
+  {
+    "id": "medium-romantic-side-swept",
+    "name": "Romantic Side Swept Curls",
+    "description": "Textured curls pinned to one side for a balanced bridal look across multiple events.",
+    "events": {
+      "Mehndi": 0.7,
+      "Baraat": 0.85,
+      "Walima": 0.9
+    },
+    "hairLengths": {
+      "Short": 0.3,
+      "Medium": 1,
+      "Long": 0.9
+    },
+    "tags": ["Romantic", "Balanced", "Curls"],
+    "image": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&h=800&fit=crop"
+  },
+  {
+    "id": "short-sleek-textured-bob",
+    "name": "Sleek Textured Bridal Bob",
+    "description": "A clean short-hair bridal style with volume at the crown and soft framing near the face.",
+    "events": {
+      "Mehndi": 0.65,
+      "Baraat": 0.72,
+      "Walima": 0.88
+    },
+    "hairLengths": {
+      "Short": 1,
+      "Medium": 0.35,
+      "Long": 0.15
+    },
+    "tags": ["Short Hair", "Modern", "Structured"],
+    "image": "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=600&h=800&fit=crop"
+  },
+  {
+    "id": "long-royal-braided-crown",
+    "name": "Royal Braided Crown",
+    "description": "A statement crown braid suited to fuller long hair and bridal jewelry styling.",
+    "events": {
+      "Mehndi": 0.85,
+      "Baraat": 0.95,
+      "Walima": 0.72
+    },
+    "hairLengths": {
+      "Short": 0.1,
+      "Medium": 0.6,
+      "Long": 1
+    },
+    "tags": ["Royal", "Statement", "Braided"],
+    "image": "https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?w=600&h=800&fit=crop"
+  }
+]
