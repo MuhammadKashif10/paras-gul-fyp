@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { motion } from "framer-motion";
-import { Eye, LogOut, ShieldCheck, Trash2 } from "lucide-react";
+import { LogOut, ShieldCheck, Trash2 } from "lucide-react";
 import MotionWrapper from "@/components/animations/MotionWrapper";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -187,20 +186,19 @@ const Admin = () => {
                     <TableHead>Recommended Hairstyle</TableHead>
                     <TableHead>Score</TableHead>
                     <TableHead>Status</TableHead>
-                    <TableHead>Preview</TableHead>
                     <TableHead>Actions</TableHead>
                   </TableRow>
                 </TableHeader>
                 <TableBody>
                   {loading ? (
                     <TableRow>
-                      <TableCell colSpan={8} className="text-center text-muted-foreground py-10">
+                      <TableCell colSpan={7} className="text-center text-muted-foreground py-10">
                         Loading bookings...
                       </TableCell>
                     </TableRow>
                   ) : bookings.length === 0 ? (
                     <TableRow>
-                      <TableCell colSpan={8} className="text-center text-muted-foreground py-10">
+                      <TableCell colSpan={7} className="text-center text-muted-foreground py-10">
                         No bookings have been created yet.
                       </TableCell>
                     </TableRow>
@@ -216,18 +214,6 @@ const Admin = () => {
                           <Badge variant={getStatusVariant(booking.status)}>
                             {booking.status}
                           </Badge>
-                        </TableCell>
-                        <TableCell>
-                          <motion.a
-                            whileHover={{ scale: 1.03 }}
-                            href={booking.image}
-                            target="_blank"
-                            rel="noreferrer"
-                            className="inline-flex items-center gap-2 rounded-lg border border-border/50 px-3 py-2 text-sm text-muted-foreground hover:text-primary transition-colors"
-                          >
-                            <Eye className="w-4 h-4" />
-                            Open
-                          </motion.a>
                         </TableCell>
                         <TableCell className="space-y-3">
                           <Select
