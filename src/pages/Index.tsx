@@ -10,18 +10,18 @@ const Index = () => {
   const features = [
     {
       icon: Upload,
-      title: "Upload Your Photo",
-      description: "Simply upload a clear front-facing photo. Our system works best with well-lit images showing your full face.",
+      title: "Submit Bridal Details",
+      description: "Enter your name, choose your event type, select hair length, and upload a clear bridal photo.",
     },
     {
       icon: ScanFace,
-      title: "Face Shape Analysis",
-      description: "Our AI analyzes your facial features including face shape, forehead, jawline, and proportions for accurate matching.",
+      title: "Rule-Based Matching",
+      description: "A weighted scoring engine compares your event and hair length against a bridal hairstyle dataset to rank the best match.",
     },
     {
       icon: Sparkles,
-      title: "AI Recommendations",
-      description: "Receive personalized bridal hairstyle suggestions that complement your unique facial structure beautifully.",
+      title: "Book Your Style",
+      description: "Review the recommendation, confirm your booking, and let the admin manage the request from the dashboard.",
     },
   ];
 
@@ -95,8 +95,8 @@ const Index = () => {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10"
             >
-              Upload your photo and let our AI recommend stunning bridal hairstyles 
-              tailored to your unique facial features. Your dream wedding look awaits.
+              Submit your bridal event details and receive a dataset-driven hairstyle
+              recommendation, then convert it into a booking through the full-stack system.
             </motion.p>
 
             {/* CTA Buttons */}

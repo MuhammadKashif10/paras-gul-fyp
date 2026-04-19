@@ -5,11 +5,14 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import ProtectedAdminRoute from "./components/ProtectedAdminRoute";
 import Index from "./pages/Index";
 import Upload from "./pages/Upload";
 import Processing from "./pages/Processing";
 import Results from "./pages/Results";
 import About from "./pages/About";
+import Admin from "./pages/Admin";
+import AdminLogin from "./pages/AdminLogin";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -29,6 +32,15 @@ const App = () => (
               <Route path="/processing" element={<Processing />} />
               <Route path="/results" element={<Results />} />
               <Route path="/about" element={<About />} />
+              <Route path="/admin/login" element={<AdminLogin />} />
+              <Route
+                path="/admin"
+                element={
+                  <ProtectedAdminRoute>
+                    <Admin />
+                  </ProtectedAdminRoute>
+                }
+              />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>

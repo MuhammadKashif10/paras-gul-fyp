@@ -29,8 +29,9 @@ const Footer = () => {
             <ul className="space-y-2">
               {[
                 { to: "/", label: "Home" },
-                { to: "/upload", label: "Upload Image" },
+                { to: "/upload", label: "Get Recommendation" },
                 { to: "/about", label: "About Project" },
+                { to: "/admin", label: "Admin Dashboard" },
               ].map((link) => (
                 <li key={link.to}>
                   <motion.div whileHover={{ x: 4 }} transition={{ duration: 0.2 }}>
@@ -67,7 +68,7 @@ const Footer = () => {
                   className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
                 >
                   <Github className="w-4 h-4" />
-                  <span>GitHub Repository</span>
+                  <span>Backend + Admin Ready</span>
                 </motion.a>
               </li>
             </ul>
@@ -77,7 +78,7 @@ const Footer = () => {
         {/* Bottom */}
         <div className="mt-12 pt-8 border-t border-border flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-muted-foreground text-sm">
-            © 2024 BridalAI. Final Year Project.
+            © 2026 BridalAI. Full-stack FYP.
           </p>
           <p className="flex items-center gap-1 text-muted-foreground text-sm">
             Made with{" "}

@@ -16,11 +16,11 @@ import MotionWrapper, { StaggerContainer, StaggerItem } from "@/components/anima
 
 const About = () => {
   const objectives = [
-    "Develop an AI-powered system for bridal hairstyle recommendations",
-    "Implement accurate facial feature detection and analysis",
-    "Create a user-friendly interface for seamless interaction",
-    "Provide personalized recommendations based on face shape",
-    "Build a scalable and maintainable web application",
+    "Generate bridal hairstyle recommendations using a rule-based scoring engine",
+    "Allow brides to submit event details, hair length, and image from a clean frontend form",
+    "Store bookings in MongoDB through a structured Express API",
+    "Provide an admin dashboard for reviewing and updating booking status",
+    "Keep the architecture modular enough for future AI upgrades",
   ];
 
   const technologies = [
@@ -28,17 +28,18 @@ const About = () => {
     { name: "Tailwind CSS", description: "Utility-first CSS framework for styling" },
     { name: "TypeScript", description: "Type-safe JavaScript for robust code" },
     { name: "Framer Motion", description: "Animation library for smooth transitions" },
-    { name: "Python/TensorFlow", description: "Backend AI model for face analysis" },
-    { name: "REST API", description: "Backend communication interface" },
+    { name: "Node.js + Express", description: "Backend API for recommendations and bookings" },
+    { name: "MongoDB", description: "Database for storing bridal bookings and statuses" },
+    { name: "JSON Rule Engine", description: "Simulated AI recommendation layer using weighted matching" },
   ];
 
   const futureEnhancements = [
-    "Virtual try-on feature using AR technology",
-    "Integration with salon booking systems",
-    "Hairstyle customization and editing tools",
-    "Community features for sharing and reviews",
-    "Mobile app development for iOS and Android",
-    "Multi-language support for global users",
+    "Upgrade rule-based matching to ML-assisted recommendations",
+    "Add salon assignment and appointment scheduling",
+    "Send booking confirmations and status notifications",
+    "Allow admins to manage hairstyle datasets from the dashboard",
+    "Support multiple bridal stylists and time slots",
+    "Add authentication for brides and admins",
   ];
 
   return (
@@ -64,9 +65,9 @@ const About = () => {
               About This <span className="text-gradient">Project</span>
             </h1>
             <p className="text-lg text-muted-foreground">
-              AI Bridal Hairstyle Recommendation System - A Final Year Project 
-              combining artificial intelligence with bridal fashion to help brides 
-              find their perfect wedding day hairstyle.
+              Bridal Hairstyle Recommendation and Booking System - a full-stack final year
+              project that combines a rule-based recommendation engine with booking
+              management for brides and admins.
             </p>
           </MotionWrapper>
         </div>
@@ -86,15 +87,15 @@ const About = () => {
                   Revolutionizing <span className="text-gradient">Bridal Style</span> Selection
                 </h2>
                 <p className="text-muted-foreground mb-4">
-                  This web application leverages artificial intelligence to help brides 
-                  choose suitable bridal hairstyles based on their unique facial features. 
-                  By analyzing face shape, proportions, and key facial landmarks, the system 
-                  provides personalized recommendations.
+                  This web application helps brides choose suitable bridal hairstyles by
+                  matching event preferences and hair length against a curated JSON dataset.
+                  The recommendation layer simulates an AI experience through weighted,
+                  explainable scoring rather than a trained model.
                 </p>
                 <p className="text-muted-foreground">
-                  The project addresses the challenge many brides face when selecting 
-                  hairstyles, providing data-driven suggestions that complement their 
-                  natural features for their special day.
+                  Once a recommendation is accepted, the system stores the booking in
+                  MongoDB and exposes it to an admin dashboard where statuses can be
+                  reviewed, approved, rejected, or removed.
                 </p>
               </MotionWrapper>
 
